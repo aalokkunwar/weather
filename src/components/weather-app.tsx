@@ -607,7 +607,7 @@ const WeatherApp = () => {
                         transition={{ delay: 0.2 }}
                       >
                         <h2 className="text-3xl font-bold text-white">{currentWeather.name}</h2>
-                        <p className="text-white/80 text-lg">{currentWeather.country}</p>
+                        <p className="text-white/80 text-lg">{currentWeather.country=="NP"? 'NEPAL':currentWeather.country}</p>
                       </motion.div>
                       <motion.div whileHover={{ rotate: 360, scale: 1.1 }} transition={{ duration: 0.6 }}>
                         <Button
@@ -649,10 +649,10 @@ const WeatherApp = () => {
                             animate={{ scale: [1, 1.05, 1] }}
                             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
                           >
-                            {Math.round(currentWeather.temp)}°C
+                            {currentWeather.temp}°C
                           </motion.div>
                           <div className="text-white/80 text-lg">
-                            Feels like {Math.round(currentWeather.feels_like)}°C
+                            Feels like {currentWeather.feels_like}°C
                           </div>
                         </div>
                       </motion.div>
@@ -674,7 +674,7 @@ const WeatherApp = () => {
                                   second: "2-digit",
                                 })}
                          
-                          {/* ////////////////////////////////////////////////// */}
+                         
 
                         </div>
                       </motion.div>
@@ -827,7 +827,7 @@ const WeatherApp = () => {
                           <div className="flex items-center gap-3">
                             {getWeatherIcon(hour.weather[0].icon, "sm")}
                             <motion.span className="font-semibold text-white text-lg" whileHover={{ scale: 1.1 }}>
-                              {Math.round(hour.temp)}°C
+                              {(hour.temp)}°C
                             </motion.span>
                           </div>
                         </motion.div>
@@ -957,16 +957,20 @@ const WeatherApp = () => {
                     </div>
                     <div className="flex justify-center gap-3 text-white relative z-10">
                       <motion.span className="text-xl font-bold" whileHover={{ scale: 1.1 }}>
-                        {day.temp.max}°
+                       H:{day.temp.max}°
                       </motion.span>
-                      <span className="text-white/60 text-lg">{day.temp.min}°</span>
+                      <span className="text-white/60 text-lg">L:{day.temp.min}°</span>
                     </div>
                   </motion.div>
                 ))}
               </div>
+                 <div className="flex justify-center items-center py-2 text-sm">
+                  <p>H- High / Maximum || L- Low / Minimun</p>
+                </div>
             </Card>
           </motion.div>
         )}
+     
       </div>
 
       {/* Enhanced Floating Elements */}
