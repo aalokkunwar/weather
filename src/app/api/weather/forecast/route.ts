@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
 
   // Using your provided API key
   // const API_KEY = "077e79f89e9cce36fa430f6a6fe293ab"
-    const API_KEY= process.env.API_KEY || "077e79f89e9cce36fa430f6a6fe293ab"
+    const API_KEY= process.env.API_KEY 
 
 
   try {
