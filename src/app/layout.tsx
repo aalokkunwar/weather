@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RealTime Weather - Get Accurate Weather Forecasts",
+  title: "RealTime Weather",
   description:
     "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide. Accurate weather data with hourly and daily forecasts.",
   keywords: [
