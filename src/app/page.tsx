@@ -29,6 +29,14 @@ export const metadata: Metadata = {
         width: 512,
         height: 512,
         alt: "RealTime Weather Dashboard",
+        type: "image/png",
+      },
+      {
+        url: "/logoA.png",
+        width: 400,
+        height: 400,
+        alt: "RealTime Weather Logo",
+        type: "image/png",
       },
     ],
   },
@@ -37,7 +45,16 @@ export const metadata: Metadata = {
     title: "RealTime Weather - Current Weather & Forecasts",
     description:
       "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location.",
-    images: ["/web-app-manifest-512x512.png"],
+    images: [
+      {
+        url: "/web-app-manifest-512x512.png",
+        alt: "RealTime Weather Dashboard",
+      },
+      {
+        url: "/logoA.png",
+        alt: "RealTime Weather Logo",
+      },
+    ],
   },
   alternates: {
     canonical: "/",

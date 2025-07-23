@@ -60,7 +60,22 @@ export const metadata: Metadata = {
         url: "/web-app-manifest-512x512.png",
         width: 512,
         height: 512,
-        alt: "RealTime Weather App - Accurate Weather Forecasts",
+        alt: "RealTime Weather App - Get Accurate Weather Forecasts",
+        type: "image/png",
+      },
+      {
+        url: "/logoA.png",
+        width: 400,
+        height: 400,
+        alt: "RealTime Weather Logo",
+        type: "image/png",
+      },
+      {
+        url: "/apple-icon.png",
+        width: 180,
+        height: 180,
+        alt: "RealTime Weather Apple Icon",
+        type: "image/png",
       },
     ],
   },
@@ -69,7 +84,16 @@ export const metadata: Metadata = {
     title: "RealTime Weather - Get Accurate Weather Forecasts",
     description:
       "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide.",
-    images: ["/web-app-manifest-512x512.png"], // Using your existing high-quality image
+    images: [
+      {
+        url: "/web-app-manifest-512x512.png",
+        alt: "RealTime Weather App - Get Accurate Weather Forecasts",
+      },
+      {
+        url: "/logoA.png",
+        alt: "RealTime Weather Logo",
+      },
+    ],
     creator: "@aalokkunwar", // Updated with your name
     site: "@aalokkunwar", // Updated with your name
   },
@@ -164,6 +188,13 @@ export default function RootLayout({
               url: "https://weather.aalokkunwar.com.np/",
               applicationCategory: "WeatherApplication",
               operatingSystem: "Web",
+              image: [
+                "https://weather.aalokkunwar.com.np/web-app-manifest-512x512.png",
+                "https://weather.aalokkunwar.com.np/logoA.png",
+                "https://weather.aalokkunwar.com.np/apple-icon.png",
+              ],
+              screenshot:
+                "https://weather.aalokkunwar.com.np/web-app-manifest-512x512.png",
               offers: {
                 "@type": "Offer",
                 price: "0",
@@ -172,6 +203,7 @@ export default function RootLayout({
               author: {
                 "@type": "Organization",
                 name: "Weather App Team",
+                logo: "https://weather.aalokkunwar.com.np/logoA.png",
               },
             }),
           }}
