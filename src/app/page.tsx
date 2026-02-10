@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "RealTime Weather - Current Weather & Forecasts",
   description:
-    "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location. Real-time weather data with temperature, humidity, wind speed, and more.",
+    "Get current weather, hourly forecasts, and 5-day predictions for any location.",
   keywords: [
     "current weather",
     "weather today",
