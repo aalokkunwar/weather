@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Real Weather",
   },
   description:
-    "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
+    "Get real-time weather forecasts, current conditions, and detailed weather info for any location worldwide. Powered by Real Weather.",
   keywords: [
     "real weather",
     "weather",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     url: "https://weather.aalokkunwar.com.np/",
     title: "Real Weather - Get Accurate Weather Forecasts",
     description:
-      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
+      "Get real-time weather forecasts, current conditions, and detailed weather info for any location worldwide. Powered by Real Weather.",
     siteName: "Real Weather",
     images: [
       {
@@ -87,7 +87,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Real Weather - Get Accurate Weather Forecasts",
     description:
-      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
+      "Get real-time weather forecasts, current conditions, and detailed weather info for any location worldwide. Powered by Real Weather.",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
