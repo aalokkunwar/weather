@@ -1,7 +1,7 @@
 {
-  "name": "RealTime Weather",
-  "short_name": "Weather",
-  "description": "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide.",
+  "name": "Real Weather",
+  "short_name": "Real Weather",
+  "description": "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

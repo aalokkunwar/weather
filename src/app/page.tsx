@@ -2,10 +2,12 @@ import WeatherApp from "@/components/weather-app";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "RealTime Weather - Current Weather & Forecasts",
+  title: "Real Weather - Current Weather & Forecasts",
   description:
-    "Get current weather, hourly forecasts, and 5-day predictions for any location.",
+    "Get current weather, hourly forecasts, and 5-day predictions for any location with Real Weather.",
   keywords: [
+    "real weather",
+    "weather",
     "current weather",
     "weather today",
     "hourly forecast",
@@ -18,9 +20,9 @@ export const metadata: Metadata = {
     "weather widget",
   ],
   openGraph: {
-    title: "RealTime Weather - Current Weather & Forecasts",
+    title: "Real Weather - Current Weather & Forecasts",
     description:
-      "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location.",
+      "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location with Real Weather.",
     type: "website",
     url: "https://weather.aalokkunwar.com.np/",
     images: [
@@ -28,31 +30,31 @@ export const metadata: Metadata = {
         url: "/web-app-manifest-512x512.png",
         width: 512,
         height: 512,
-        alt: "RealTime Weather Dashboard",
+        alt: "Real Weather Dashboard",
         type: "image/png",
       },
       {
         url: "/logoA.png",
         width: 400,
         height: 400,
-        alt: "RealTime Weather Logo",
+        alt: "Real Weather Logo",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RealTime Weather - Current Weather & Forecasts",
+    title: "Real Weather - Current Weather & Forecasts",
     description:
-      "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location.",
+      "Get instant access to current weather conditions, hourly forecasts, and 7-day weather predictions for any location with Real Weather.",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
-        alt: "RealTime Weather Dashboard",
+        alt: "Real Weather Dashboard",
       },
       {
         url: "/logoA.png",
-        alt: "RealTime Weather Logo",
+        alt: "Real Weather Logo",
       },
     ],
   },
@@ -71,7 +73,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": ["WebApplication", "Service"],
-            name: "RealTime Weather",
+            name: "Real Weather",
             description:
               "Real-time weather forecasting service providing current conditions, hourly and daily forecasts for locations worldwide.",
             url: "https://weather.aalokkunwar.com.np/",
@@ -81,7 +83,7 @@ export default function Home() {
             areaServed: "Worldwide",
             provider: {
               "@type": "Organization",
-              name: "Weather App by Aalok",
+              name: "Real Weather by Aalok",
               url: "https://weather.aalokkunwar.com.np/",
             },
             hasOfferCatalog: {

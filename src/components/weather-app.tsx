@@ -425,7 +425,7 @@ const WeatherApp = () => {
               ease: "linear",
             }}
           >
-            Weather Forecast
+            Real Weather
           </motion.h1>
           <motion.p
             className="text-white/80 text-lg"

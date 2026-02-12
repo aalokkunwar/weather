@@ -15,10 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "RealTime Weather",
+  title: {
+    default: "Real Weather - Current Weather & Forecasts",
+    template: "%s | Real Weather",
+  },
   description:
-    "Real-time weather forecasts and current conditions for locations worldwide.",
+    "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
   keywords: [
+    "real weather",
     "weather",
     "weather forecast",
     "real-time weather",
@@ -37,65 +41,65 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Aalok Kunwar" }],
   creator: "Aalok Kunwar",
-  publisher: "Weather App by Aalok",
+  publisher: "Real Weather by Aalok",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://weather.aalokkunwar.com.np/"), // Replace with your actual domain
+  metadataBase: new URL("https://weather.aalokkunwar.com.np/"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://weather.aalokkunwar.com.np/", // Replace with your actual domain
-    title: "RealTime Weather - Get Accurate Weather Forecasts",
+    url: "https://weather.aalokkunwar.com.np/",
+    title: "Real Weather - Get Accurate Weather Forecasts",
     description:
-      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide.",
-    siteName: "RealTime Weather",
+      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
+    siteName: "Real Weather",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
         width: 512,
         height: 512,
-        alt: "RealTime Weather App - Get Accurate Weather Forecasts",
+        alt: "Real Weather App - Get Accurate Weather Forecasts",
         type: "image/png",
       },
       {
         url: "/logoA.png",
         width: 400,
         height: 400,
-        alt: "RealTime Weather Logo",
+        alt: "Real Weather Logo",
         type: "image/png",
       },
       {
         url: "/apple-icon.png",
         width: 180,
         height: 180,
-        alt: "RealTime Weather Apple Icon",
+        alt: "Real Weather Apple Icon",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RealTime Weather - Get Accurate Weather Forecasts",
+    title: "Real Weather - Get Accurate Weather Forecasts",
     description:
-      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide.",
+      "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide with Real Weather.",
     images: [
       {
         url: "/web-app-manifest-512x512.png",
-        alt: "RealTime Weather App - Get Accurate Weather Forecasts",
+        alt: "Real Weather App - Get Accurate Weather Forecasts",
       },
       {
         url: "/logoA.png",
-        alt: "RealTime Weather Logo",
+        alt: "Real Weather Logo",
       },
     ],
-    creator: "@aalokkunwar", // Updated with your name
-    site: "@aalokkunwar", // Updated with your name
+    creator: "@aalokkunwar",
+    site: "@aalokkunwar",
   },
   robots: {
     index: true,
@@ -109,17 +113,18 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "WuNOwl186LmaeeEWncHz5vzaGFeT0y7Oz-m99XklRFc", // Replace with your Google verification code
-    yandex: "your-yandex-verification-code", // Replace with your Yandex verification code
-    yahoo: "your-yahoo-verification-code", // Replace with your Yahoo verification code
+    google: "WuNOwl186LmaeeEWncHz5vzaGFeT0y7Oz-m99XklRFc",
+    other: {
+      me: ["mailto:contact@aalokkunwar.com.np"],
+    },
   },
   category: "weather",
   classification: "weather application",
   other: {
-    "application-name": "RealTime Weather",
+    "application-name": "Real Weather",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
-    "apple-mobile-web-app-title": "RealTime Weather",
+    "apple-mobile-web-app-title": "Real Weather",
     "format-detection": "telephone=no",
     "mobile-web-app-capable": "yes",
     "msapplication-config": "/browserconfig.xml",
@@ -144,7 +149,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="RealTime Weather" />
+        <meta name="apple-mobile-web-app-title" content="Real Weather" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="msapplication-TileColor" content="#000000" />
@@ -182,7 +187,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebApplication",
-              name: "RealTime Weather",
+              name: "Real Weather",
+              alternateName: "RealWeather",
               description:
                 "Get real-time weather forecasts, current conditions, and detailed weather information for any location worldwide.",
               url: "https://weather.aalokkunwar.com.np/",
@@ -202,8 +208,17 @@ export default function RootLayout({
               },
               author: {
                 "@type": "Organization",
-                name: "Weather App Team",
+                name: "Real Weather Team",
                 logo: "https://weather.aalokkunwar.com.np/logoA.png",
+                url: "https://weather.aalokkunwar.com.np/",
+              },
+              publisher: {
+                "@type": "Organization",
+                name: "Real Weather",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://weather.aalokkunwar.com.np/logoA.png",
+                },
               },
             }),
           }}
